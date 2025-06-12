@@ -1,0 +1,27 @@
+body {
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://www.shutterstock.com/image-vector/sky-clouds-anime-background-cloudy-600nw-2430402851.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  flex: 1;
+}
+.alturaCarousel {
+  height: 91dvh;
+}
+
+.productoImg {
+  height: 300px;
+}
+.productoImg {
+  transition: transform 0.3s ease;
+}
+.productoImg:hover {
+  transform: scale(1.03);
+}
+
+/* ACCESORIOS */

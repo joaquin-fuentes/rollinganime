@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.iconarchive.com/download/i54293/crountch/one-piece-jolly-roger/Luffys-flag.ico"
+      type="image/x-icon"
+    />
+    <title>RollingAnime</title>
+    <!-- CDN de CSS de bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <!-- CDN de iconos de bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="position-sticky top-0 z-3">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-warning" href="#">RollingAnime</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/sobreNosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li>
+                <!-- Boton MODAL -->
+                <button
+                  type="button"
+                  class="btn btn-outline-light"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Iniciar Sesión
+                </button>
+              </li>
+            </ul>
+            <form class="d-flex" role="Buscar">
+              <input
+                class="form-control me-2"
+                type="Buscar"
+                placeholder="Buscar"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                <i class="bi bi-search text-warning text-ho"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- PORTADA - CAROUSEL -->
+      <div id="carouselExampleCaptions" class="carousel slide alturaCarousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner h-100">
+          <div class="carousel-item h-100 active">
+            <img
+              src="https://naruto-official.com/common/ogp/NTOS_OG-main.png"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="Imagen 1"
+            />
+            <div class="carousel-caption d-none d-md-block bg-dark">
+              <h5>Texto de la imagen 1</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="https://www.shutterstock.com/image-vector/kyojuro-rengoku-flame-hashira-demon-600nw-2319810731.jpg"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="https://wallpapers.com/images/hd/lightning-striking-harry-potter-ipad-3x38wdiaulzl8mtz.jpg"
+              class="d-block w-100 h-100 object-fit-cover"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- SECCION CATEGORIAS -->
+      <section class="bg-dark text-white text-center p-5">
+        <h2>Categorías Populares</h2>
+        <div class="row row-cols-2 row-cols-md-4 g-4 mt-4">
+          <div class="col">
+            <div class="card border border-warning bg-dark tarjetaCategoria">
+              <a href="" class="nav-link text-white">Figuras</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-warning bg-dark tarjetaCategoria">
+              <a href="" class="nav-link text-white">Ropa</a>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              class="card border border-warning bg-dark tarjetaCategoria p-4"
+            >
+              <i class="bi bi-book-half text-white fs-1"></i>
+              <a href="" class="nav-link text-white">Mangas</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-warning bg-dark tarjetaCategoria">
+              <a href="./pages/accesorios.html" class="nav-link text-white"
+                >Accesorios</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PRODUCTOS DESTACADOS -->
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Productos Destacados</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 overflow-hidden">
+              <img
+                src="https://vulcanita.com.ar/wp-content/uploads/2024/03/Foto2_Minix_11339_Product_Kakashi.jpg"
+                class="card-img-top productoImg w-100 object-fit-cover"
+                alt="Figura Kakashi"
+              />
+              <div class="card-body bg-black text-white">
+                <h5 class="card-title">Figura Naruto - Kakashi</h5>
+                <p class="card-text">Figura articulada de alta calidad.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 overflow-hidden">
+              <img
+                src="https://kiddiekustoms.com.ar/wp-content/uploads/2020/11/Skull-One-Piece-Remera-Estampada_01.jpg"
+                class="card-img-top productoImg w-100 object-fit-cover"
+                alt="Remera One Piece"
+              />
+              <div class="card-body bg-black text-white">
+                <h5 class="card-title">Remera One Piece</h5>
+                <p class="card-text">
+                  Algodón premium con estampado full color.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 overflow-hidden">
+              <img
+                src="https://www.ubuy.com.ar/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY29tLmJyLzY0NWEyMDc2MzUwZTI1MGZjYTBjNzdmYy1uZXctdm9sLW9mLWRlbW9uLXNsYXllci1raW1ldHN1LW5vLmpwZw.jpg"
+                class="card-img-top productoImg w-100 object-fit-cover"
+                alt="Manga Demon Slayer"
+              />
+              <div class="card-body bg-black text-white">
+                <h5 class="card-title">Set de Manga Demon Slayer</h5>
+                <p class="card-text">Volúmenes 1 al 5 con portada especial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- UBICACIÓN -->
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Ubicación</h2>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3551.835720372743!2d-65.2084850850301!3d-26.824139483163184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d2f69d38a77%3A0x887d6c8167b7cc00!2sPlaza%20Independencia%2C%20San%20Miguel%20de%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1685988342625!5m2!1ses!2sar"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-black text-white text-center py-4 mt-5">
+      <div class="container">
+        <p>&copy; 2025 RollingAnime - Todos los derechos reservados.</p>
+        <p class="mb-0">Hecho con ❤️ en Tucumán</p>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Iniciar Sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <div class="input-group has-validation">
+                  <span
+                    class="input-group-text bg-dark text-light"
+                    id="inputGroupPrepend"
+                    >@</span
+                  >
+                  <input
+                    type="email"
+                    class="form-control bg-dark text-white"
+                    id="email"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    minlength="5"
+                    maxlength="50"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese su correo electronico.
+                  </div>
+                  <div class="valid-feedback">Bien hecho!</div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <div class="input-group has-validation">
+                  <input
+                    type="password"
+                    class="form-control bg-dark text-white"
+                    id="password"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                    minlength="4"
+                    maxlength="10"
+                  />
+                  <div class="invalid-feedback">
+                    Por favor ingrese su contraseña. Debe tener entre 4 y 10
+                    caracteres
+                  </div>
+                  <div class="valid-feedback">Bien hecho!</div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">Ingresar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach((form) => {
+          form.addEventListener(
+            "submit",
+            (event) => {
+              if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+
+              form.classList.add("was-validated");
+            },
+            false
+          );
+        });
+      })();
+    </script>
+  </body>
+</html>
